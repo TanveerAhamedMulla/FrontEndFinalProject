@@ -21,10 +21,16 @@ This is a project that excercised my ability to navigate through the module bund
 ## To run in Development Mode, follow the steps as below
 
 1. Open Command prompt and run server by typing "npm start"
+![](screenshots/RunningServer.jpg)
 2. Open one more command prompt and type "npm run build-dev"
+![](screenshots/DevelopmentMode.png)
 3. Automatically Web Browzer will be opened.
+![](screenshots/DevelopmentModeWorking.png)
 
 ## To run in Production Mode, follow the steps as below,
 1. Open Command Prompt and type "npm run build-prod"
+![](screenshots/ProductionMode.png)
 2. Start the server by entering "npm start"
+![](screenshots/RunningServer.jpg)
 3. Open Browzer and type "http://localhost:8080"
+![](screenshots/ProductionModeWorking.png)
