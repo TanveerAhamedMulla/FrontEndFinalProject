@@ -59,7 +59,7 @@ app.post('/getWeather', async (req, res, next) => {
     let properMonth = monthInNum - 1;
     var target = new Date(year, properMonth, day);
     let theTime = year+'-'+monthInNum+'-'+day;
-    let apiKey = `${process.env.DARK_SKY_API_KEY}`
+    let apiKey = 'aed79316b7e3ae8325e42b9e357bbb99'
     let proxy = 'https://cors-anywhere.herokuapp.com/';
     let theAppURL = 'https://api.darksky.net/forecast/'+apiKey+'/'+latitude+','+longitude;
     const darksky = new DarkSky(apiKey)
@@ -79,10 +79,9 @@ app.post('/getWeather', async (req, res, next) => {
         console.log("error", error);
     }
 
-    console.log("Pixabay API Key in env is: " + `${process.env.PIXABAY_API_KEY}`);
     try {
         var params = {
-            key: `${process.env.PIXABAY_API_KEY}`,
+            key: `14742948-539ebd2455f82f70e0bae3775`,
             q: location, // automatically URL-encoded
             image_type: "photo",
           };
