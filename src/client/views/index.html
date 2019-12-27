@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Travel Planner Project</h2>
+<p>Enter the trip location and date of departure to see what is wheather in your destination.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="place">Location</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="place" placeholder="Paris">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="date">Departure Date</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="date" placeholder="MM/DD/YYYY">
+      </div>
+    </div>
+    <div class="row">
+      <br>
+      <input id="getWeather" type="submit" name="Get Weather Information" value="Get Trip Info" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+    </div>
+  </form>
+  <br>
+  <br>
+  <div class="cityImage">
+  	<img id="cityImg" />
+  </div>
+  <div class="cityInformation">
+    <h4>Wheather</h4>
+  	<p class="text-bold">My trip to: <span id="departingLocation"></span></p>
+  	<p class="text-bold">Departing: <span id="departingDate"></span></p>
+    <p>Typical weather for then is:</p>
+    <p><small>High: <span id="high"><br>
+    </span> Low: <span id="low"></span></small></p>
+    <p><small id="summary"></small></p>
+  </div>
+</div>
+</body>
+</html>
